@@ -3,9 +3,10 @@ import django
 import os
 from pathlib import Path
 
+
 def init(cwd: str = ""):
     cwd = cwd or str(Path(os.getcwd()) / "data")
-    
+
     sys.path.append(cwd)
     # print(sys.path)
     # print(cwd)
